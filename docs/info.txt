@@ -1,0 +1,25 @@
+# ----------------------------- Explicación TODO ----------------------------- #
+
+
+- La función addTask se activa cuando se hace clic en el botón "Agregar tarea"
+
+- Se obtienen los valores de los campos de entrada de tarea, categoría y prioridad.
+
+- Se verifica si el campo de tarea está vacío o contiene solo espacios en blanco utilizando un if. Si es 
+así, se muestra una notificaciónde error utilizando Notyf, con el mensaje "Ingrese un tarea válida".
+
+- Si la tarea es válida (no está vacía), se crea un nuevo elemento "li" llamado "taskItem" para representar 
+la tarea
+
+- Se construye la cadena HTML taskHTML para la tarea, que incluye la tarea, la categoría y la prioridad 
+si se proporcionan valores
+
+- Se crea el botón de eliminación deleteButton y se le asigna una clase y un texto
+
+- Se agrega un manejador de eventos al botón de eliminación que elimina la tarea al hacer clic en él
+
+- Se agrega el botón de eliminación como un hijo del elemento li (taskItem).
+
+- Se agrega el elemento li (la tarea) a la lista (<ul>) con el ID taskList.
+
+- Finalmente, se limpian los campos de entrada después de agregar la tarea para que el usuario pueda ingresar una nueva tarea. 
